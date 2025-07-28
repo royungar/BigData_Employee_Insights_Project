@@ -39,7 +39,7 @@ schema = StructType([
 ])
 
 # Load CSV data using defined schema
-employees_df = spark.read.csv("employees.csv", header=True, schema=schema)
+employees_df = spark.read.csv("data/employees.csv", header=True, schema=schema)
 
 # Display the schema of the DataFrame
 employees_df.printSchema()
